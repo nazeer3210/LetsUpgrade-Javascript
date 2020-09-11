@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Assignment 1 day4</title>
+  </head>
+<body>
+    <p>Hello Everyone.!</p>
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" id="image" width="1000px" height="700px">
+    <input type="button" onclick="change()" value="Click2" />
+    <input type="button" onclick="change1()" value="Click3" />
+    <input type="button" onclick="change2()" value="Click1" />
+    <script>
+        function change() {
+            var pht = document.getElementById('image');
+            if (pht.src.match("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg")) {
+                pht.src = "https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_960_720.jpg";
+            }
+        }
+        function change1() {
+            var pht = document.getElementById('image');
+            if (pht.src.match("https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_960_720.jpg")) {
+                pht.src = "https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_960_720.jpg";
+            }
+        }
+        function change2() {
+            var pht = document.getElementById('image');
+            if (pht.src.match("https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_960_720.jpg")) {
+                pht.src = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg";
+            }
+        }
+    </script>
+
+</body>
+</html>
